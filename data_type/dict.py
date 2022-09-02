@@ -122,3 +122,18 @@ for i in key_1:
         val_1.remove(j)
         break
 print(dict_data_6)
+
+print(" ........................... 10. Program .........................")
+"Convert a list into a nested dictionary of keys. "
+l1 = ['a', 'b', 'c', 'd']
+l2 = ['e', 'f', 'g', 'g']
+l3 = [10, 20, 30, 40]
+
+Nested_dict = [{a: {b: c}} for a, b, c in zip(l1, l2, l3)]
+print("Nested Dictionary :", Nested_dict)
+print(" ............................. 11. Program .................................")
+Nested_list = [['Sachin', 348], ['Dhoni', 383], ['Kohli', 379], ['Gautam', 401]]
+Conv_Dict = {}
+for val in Nested_list:
+    Conv_Dict[val[0]] = val[1]
+print("Convert Nested list into dict :", Conv_Dict)
