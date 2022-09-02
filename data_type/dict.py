@@ -93,3 +93,32 @@ for key1 in dict1:
     if key1 in dict2:
         dict1[key1] = dict1[key1] + dict2[key1]
 print("Combine addition value for common Key:", dict1)
+
+print("Create a dictionary from a string. ")
+String_data = "wryyijbczzryookkvhghjk4324546688"
+dict_data_4 = {}
+for char in String_data:
+    dict_data_4[char] = dict_data_4.get(char, 0) + 1
+print(dict_data_4)
+
+print("....................... 9.Program .............................. ")
+"Map two lists into a dictionary"
+key = ['a', 'b', 'c', 'd', 'e']
+val = [100, 200, 300, 400, 500]
+dict_data_5 = {}
+for i in key:
+    for j in val:
+        dict_data_5[i] = j
+        val.remove(j)
+        break
+print(dict_data_5)
+
+key_1 = ['a', 'b', 'c', 'd', 'e']
+val_1 = [100, 200, 300, 400, 500]
+dict_data_6 = {}
+for i in key_1:
+    for j in val_1[::-1]:
+        dict_data_6[i] = j
+        val_1.remove(j)
+        break
+print(dict_data_6)
