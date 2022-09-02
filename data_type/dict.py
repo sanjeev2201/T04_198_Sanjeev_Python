@@ -74,7 +74,7 @@ for val in New_list:
         Min_Val = val
 print(" Minimum Value in Dictionary :", Min_Val)
 
-print("..................... 6.Program ....................")
+print("..................... 7.Program ....................")
 "Remove duplicates from Dictionary"
 Rm_dup_dict = {'gfg': 10, 'is': 15, 'best': 20, 'for': 10, 'geeks': 20}
 list_1 = []
@@ -84,3 +84,12 @@ for key in Rm_dup_dict:
         list_1.append(Rm_dup_dict[key])
         New_Dict[key] = Rm_dup_dict[key]
 print("New Dict:", New_Dict)
+
+print(".......................... 8. Program .......................")
+"Combine two dictionary adding values for common keys."
+dict1 = {'a': 12, 'for': 25, 'c': 9}
+dict2 = {'Geeks': 100, 'geek': 200, 'for': 300}
+for key1 in dict1:
+    if key1 in dict2:
+        dict1[key1] = dict1[key1] + dict2[key1]
+print("Combine addition value for common Key:", dict1)
