@@ -1,4 +1,3 @@
-import re
 
 """TO SORT ALPHANUMERIC
  OUTPUT-ABD134"""
